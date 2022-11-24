@@ -1,7 +1,7 @@
 
 # Obfuscator++
 
-![Example](examples/Screen\ Shot\ 2022-11-24\ at\ 3.12.43 AM.png)
+![Example](examples/Screen Shot 2022-11-24 at 3.12.43 AM.png)
 A C++ rewrite of the PythonTextObfuscator.
 
 It translates texts through multiple languages with Google Translate, resulting in a poor translation of the original text.
