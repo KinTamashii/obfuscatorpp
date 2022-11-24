@@ -13,6 +13,7 @@ set(CMAKE_CXX_FLAGS_DEBUG  "-g")
 message(${PROJECT_NAME})
 
 option(LIBRARIES_PATH "LIBRARIES_PATH" /opt/homebrew/Cellar)
+option(CURLPP_PATH "CURLPP_PATH" ${LIBRARIES_PATH}/curlpp/0.8.1_1/lib/)
 
 get_project_files(OBFUSCATOR_PP_SOURCES OBFUSCATOR_PP_INCLUDE_DIRS "*.cpp" "*.hpp")
 
@@ -70,6 +71,6 @@ else()
 
 endif()
 
-target_link_libraries("obfuscator++"  ${CURLPP_LDFLAGS} ${CURL_LIBRARIES} -lcurlpp -lcurl -L${LIBRARIES_PATH}/curlpp/0.8.1_1/lib/ ${Gumbo_LIBRARY} -L${LIBRARIES_PATH}/gumbo-query/lib/ ${wxWidgets_LIBRARIES})
+target_link_libraries("obfuscator++"  ${CURLPP_LDFLAGS} ${CURL_LIBRARIES} -lcurlpp -lcurl -L${CURLPP_PATH} ${Gumbo_LIBRARY} -L${LIBRARIES_PATH}/gumbo-query/lib/ ${wxWidgets_LIBRARIES})
 
 

@@ -99,6 +99,7 @@
     },
     "cmake.configureArgs": [
         "-DLIBRARIES_PATH=/opt/homebrew/Cellar",
+        "-DCURPP_PATH=/opt/homebrew/Cellar/curlpp/0.8.1_1/lib/",
         "-DCMAKE_BUILD_TYPE=release"
     ],
 }
