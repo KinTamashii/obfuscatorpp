@@ -1,3 +1,0 @@
-/Users/kin_tamashii/Desktop/c++/obfuscator++/build/CMakeFiles/obfuscator++.dir
-/Users/kin_tamashii/Desktop/c++/obfuscator++/build/CMakeFiles/edit_cache.dir
-/Users/kin_tamashii/Desktop/c++/obfuscator++/build/CMakeFiles/rebuild_cache.dir
