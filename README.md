@@ -42,7 +42,7 @@ Preforming the Generate action on files/directories.
 
 Swap Button which puts the output text into the input box and immediately obfuscates.
 
-Accumate Button which is similar to the Swap Button but appends the text to the end of the input text rather than replacing it.
+Accumulate Button which is similar to the Swap Button but appends the text to the end of the input text rather than replacing it.
 
 Option to choose whether to include non-letter characters in the translation requests (which typically cause the result to balloon dramatically in size).
 
