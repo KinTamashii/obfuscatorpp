@@ -39,7 +39,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "/Users/kin_tamashii/Desktop/c++/obfuscator++/build/CMakeFiles/cmake.verify_globs")
 endif()
 
-# _LIST at CMakeLists.txt:35 (file)
+# _LIST at CMakeLists.txt:36 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/kin_tamashii/Desktop/c++/obfuscator++/resources/macosx/*")
 set(OLD_GLOB
   "/Users/kin_tamashii/Desktop/c++/obfuscator++/resources/macosx/Obfuscator++.icns"

@@ -12,6 +12,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -std=c++2a")
 set(CMAKE_CXX_FLAGS_DEBUG  "-g")
 message(${PROJECT_NAME})
 
+option(CERT_AUTH "CERT_AUTH" Kin_Tamashii)
 option(CURLPP_PATH "CURLPP_PATH" /opt/homebrew/Cellar/curlpp/0.8.1_1)
 
 get_project_files(OBFUSCATOR_PP_SOURCES OBFUSCATOR_PP_INCLUDE_DIRS "*.cpp" "*.hpp")
@@ -46,10 +47,13 @@ function(resource_macosx VAR SOURCE_PATH DESTINATION PATTERN)
     set(${VAR} ${_LIST} PARENT_SCOPE)
 endfunction()
 
+message(bruh )
+
 if (APPLE)
     resource_macosx(APP_SRC ${PROJECT_SOURCE_DIR}/resources/macosx Resources *)
     add_executable("obfuscator++" MACOSX_BUNDLE ${OBFUSCATOR_PP_SOURCES} ${APP_SRC})
     set_target_properties("obfuscator++" PROPERTIES MACOSX_BUNDLE_INFO_PLIST ${PROJECT_SOURCE_DIR}/resources/Info.plist OUTPUT_NAME "Obfuscator++")
+    add_custom_command(TARGET "obfuscator++" POST_BUILD COMMAND codesign --force --deep --sign ${CERT_AUTH} ${PROJECT_SOURCE_DIR}/build/Obfuscator++.app)
 elseif(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
     enable_language("RC")
     set (WIN32_RESOURCES ${PROJECT_SOURCE_DIR}/resources/windows/Obfuscator++.rc)

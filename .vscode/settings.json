@@ -98,8 +98,8 @@
         "*.ipp": "cpp"
     },
     "cmake.configureArgs": [
-        "-DLIBRARIES_PATH=/opt/homebrew/Cellar",
         "-DCURLPP_PATH=/opt/homebrew/Cellar/curlpp/0.8.1_1",
+        "-DCERT_AUTH=Kin_Tamashii",
         "-DCMAKE_BUILD_TYPE=release"
     ],
 }

@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//CERT_AUTH
+CERT_AUTH:BOOL=Kin_Tamashii
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -209,21 +212,6 @@ CURL_LIBRARY_DEBUG:FILEPATH=CURL_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 CURL_LIBRARY_RELEASE:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/lib/libcurl.tbd
 
-//No help, variable specified on the command line.
-CURPP_PATH:UNINITIALIZED=/opt/homebrew/Cellar/curlpp/0.8.1_1/lib/
-
-//Path to a file.
-Gumbo_INCLUDE_DIR:PATH=/opt/homebrew/include
-
-//Path to a library.
-Gumbo_LIBRARY:FILEPATH=/opt/homebrew/lib/libgumbo.dylib
-
-//Path to a library.
-Gumbo_static_LIBRARY:FILEPATH=/opt/homebrew/lib/libgumbo.a
-
-//No help, variable specified on the command line.
-LIBRARIES_PATH:UNINITIALIZED=/opt/homebrew/Cellar
-
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
@@ -238,9 +226,6 @@ obfuscator++_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 obfuscator++_SOURCE_DIR:STATIC=/Users/kin_tamashii/Desktop/c++/obfuscator++
-
-//Path to a library.
-pkgcfg_lib_Gumbo_PKGCONF_gumbo:FILEPATH=/opt/homebrew/Cellar/gumbo-parser/0.10.1/lib/libgumbo.dylib
 
 //Path to a library.
 pkgcfg_lib_PC_CURL_curl:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/lib/libcurl.tbd
@@ -400,47 +385,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/Library/Developer/CommandLineTools/
 FIND_PACKAGE_MESSAGE_DETAILS_CURLpp:INTERNAL=[/opt/homebrew/lib/libcurlpp.a][/opt/homebrew/include/curlpp][v()]
 //Details about finding wxWidgets
 FIND_PACKAGE_MESSAGE_DETAILS_wxWidgets:INTERNAL=[-L/opt/homebrew/lib;;;-framework IOKit;-framework Carbon;-framework Cocoa;-framework QuartzCore;-framework AudioToolbox;-framework System;-framework OpenGL;-lwx_osx_cocoau_gl-3.2;-lwx_osx_cocoau_core-3.2;-lwx_baseu-3.2][/opt/homebrew/lib/wx/include/osx_cocoa-unicode-3.2;/opt/homebrew/include/wx-3.2][v3.2.0()]
-//ADVANCED property for variable: Gumbo_INCLUDE_DIR
-Gumbo_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Gumbo_LIBRARY
-Gumbo_LIBRARY-ADVANCED:INTERNAL=1
-Gumbo_PKGCONF_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/gumbo-parser/0.10.1/include
-Gumbo_PKGCONF_CFLAGS_I:INTERNAL=
-Gumbo_PKGCONF_CFLAGS_OTHER:INTERNAL=
-Gumbo_PKGCONF_FOUND:INTERNAL=1
-Gumbo_PKGCONF_INCLUDEDIR:INTERNAL=/opt/homebrew/Cellar/gumbo-parser/0.10.1/include
-Gumbo_PKGCONF_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/gumbo-parser/0.10.1/include
-Gumbo_PKGCONF_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/gumbo-parser/0.10.1/lib;-lgumbo
-Gumbo_PKGCONF_LDFLAGS_OTHER:INTERNAL=
-Gumbo_PKGCONF_LIBDIR:INTERNAL=/opt/homebrew/Cellar/gumbo-parser/0.10.1/lib
-Gumbo_PKGCONF_LIBRARIES:INTERNAL=gumbo
-Gumbo_PKGCONF_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/gumbo-parser/0.10.1/lib
-Gumbo_PKGCONF_LIBS:INTERNAL=
-Gumbo_PKGCONF_LIBS_L:INTERNAL=
-Gumbo_PKGCONF_LIBS_OTHER:INTERNAL=
-Gumbo_PKGCONF_LIBS_PATHS:INTERNAL=
-Gumbo_PKGCONF_MODULE_NAME:INTERNAL=gumbo
-Gumbo_PKGCONF_PREFIX:INTERNAL=/opt/homebrew/Cellar/gumbo-parser/0.10.1
-Gumbo_PKGCONF_STATIC_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/gumbo-parser/0.10.1/include
-Gumbo_PKGCONF_STATIC_CFLAGS_I:INTERNAL=
-Gumbo_PKGCONF_STATIC_CFLAGS_OTHER:INTERNAL=
-Gumbo_PKGCONF_STATIC_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/gumbo-parser/0.10.1/include
-Gumbo_PKGCONF_STATIC_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/gumbo-parser/0.10.1/lib;-lgumbo
-Gumbo_PKGCONF_STATIC_LDFLAGS_OTHER:INTERNAL=
-Gumbo_PKGCONF_STATIC_LIBDIR:INTERNAL=
-Gumbo_PKGCONF_STATIC_LIBRARIES:INTERNAL=gumbo
-Gumbo_PKGCONF_STATIC_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/gumbo-parser/0.10.1/lib
-Gumbo_PKGCONF_STATIC_LIBS:INTERNAL=
-Gumbo_PKGCONF_STATIC_LIBS_L:INTERNAL=
-Gumbo_PKGCONF_STATIC_LIBS_OTHER:INTERNAL=
-Gumbo_PKGCONF_STATIC_LIBS_PATHS:INTERNAL=
-Gumbo_PKGCONF_VERSION:INTERNAL=0.10.1
-Gumbo_PKGCONF_gumbo_INCLUDEDIR:INTERNAL=
-Gumbo_PKGCONF_gumbo_LIBDIR:INTERNAL=
-Gumbo_PKGCONF_gumbo_PREFIX:INTERNAL=
-Gumbo_PKGCONF_gumbo_VERSION:INTERNAL=
-//ADVANCED property for variable: Gumbo_static_LIBRARY
-Gumbo_static_LIBRARY-ADVANCED:INTERNAL=1
 PC_CURL_CFLAGS:INTERNAL=
 PC_CURL_CFLAGS_I:INTERNAL=
 PC_CURL_CFLAGS_OTHER:INTERNAL=
@@ -480,12 +424,8 @@ PC_CURL_libcurl_VERSION:INTERNAL=
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-__pkg_config_arguments_Gumbo_PKGCONF:INTERNAL=gumbo;QUIET
 __pkg_config_arguments_PC_CURL:INTERNAL=QUIET;libcurl
-__pkg_config_checked_Gumbo_PKGCONF:INTERNAL=1
 __pkg_config_checked_PC_CURL:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_Gumbo_PKGCONF_gumbo
-pkgcfg_lib_Gumbo_PKGCONF_gumbo-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PC_CURL_curl
 pkgcfg_lib_PC_CURL_curl-ADVANCED:INTERNAL=1
 prefix_result:INTERNAL=AsynchDNS;IPv6;Largefile;GSS-API;Kerberos;SPNEGO;MultiSSL;NTLM;NTLM_WB;SSL;libz;HTTP2;UnixSockets;HTTPS-proxy
