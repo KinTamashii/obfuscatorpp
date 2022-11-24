@@ -1,9 +1,5 @@
-//#include <myhtml/myhtml.h>
 #include <curlpp/cURLpp.hpp>
 #include <curlpp/Easy.hpp>
-// /#include <gumbo.h>
-#include "Document.h"
-#include "Node.h"
 #include <curlpp/Infos.hpp>
 #include <curlpp/Options.hpp>
 #include <sstream>

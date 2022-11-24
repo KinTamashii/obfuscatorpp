@@ -16,16 +16,12 @@ It translates texts through multiple languages with Google Translate, resulting 
 
     libcurl
 
-    CURLpp
-
-    gumbo
+    CURLpp https://github.com/jpbarrette/curlpp
 
 # Setup
 After installing the dependencies, run cmake and build with the following options:
 
-    -DLIBRARIES_PATH=${PATH_TO_YOUR_LIBRARIES}
-
-    -DCURPP_PATH=${PATH_TO_CURLPP}
+    -DCURLPP_PATH=${PATH_TO_CURLPP}
 
 # Features
 Opening text and loading into the input box.
