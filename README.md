@@ -10,6 +10,8 @@ It translates texts through multiple languages with Google Translate, resulting 
 
 # Dependencies
 
+    fmt library https://github.com/fmtlib/fmt
+
     cmake
 
     wxWidgets

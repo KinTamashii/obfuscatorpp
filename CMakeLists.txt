@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -std=c++2a")
 set(CMAKE_CXX_FLAGS_DEBUG  "-g")
+set(CMAKE_CXX_FLAGS_RELEASE  "")
 message(${PROJECT_NAME})
 
 option(CERT_AUTH "CERT_AUTH" Kin_Tamashii)
@@ -23,10 +24,14 @@ message(${OBFUSCATOR_PP_INCLUDE_DIRS})
 find_package(wxWidgets REQUIRED gl core base OPTIONAL_COMPONENTS net)
 include(${wxWidgets_USE_FILE})
 
+message(test (${wxWidgets_INCLUDE_DIRS}))
+message(test (${wxWidgets_LIBRARIES}))
+
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
 find_package(CURLpp REQUIRED)
+
 
 
 include_directories(${OBFUSCATOR_PP_INCLUDE_DIRS} ${CURL_INCLUDE_DIRS} ${CURLPP_PATH}/include/ ${wxWidgets_INCLUDE_DIRS})
@@ -62,6 +67,8 @@ else()
 
 
 endif()
+
+message(testtest (${wxWidgets_LIBRARIES}))
 
 target_link_libraries("obfuscator++"  ${CURLPP_LDFLAGS} ${CURL_LIBRARIES} -lcurlpp -lcurl -L${CURLPP_PATH}/lib/ ${wxWidgets_LIBRARIES})
 
